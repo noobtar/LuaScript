@@ -6,7 +6,7 @@ function Baselib() --find base libgame.so function.
 local baselib = gg.getRangesList('libgame.so')
 gg.setVisible(false)
 gg.setRanges(16384) --set memory range to libgame.so
-gg.searchNumber('h7F 45 4C 46 01 01 01 00  00 00 00 00 00 00 00 00﻿ 03 00 28 00 01 00 00 00  00 00 00 00 34 00 00 00﻿ 4C 35 52 01 00 02 00 05  34 00 20 00 08 00 28 00',gg.TYPE_BYTE,false,nil,nil,nil,2)
+gg.searchNumber('h7F 45 4C 46 01 01 01 00  00 00 00 00 00 00 00 00 03 00 28 00 01 00 00 00  00 00 00 00 34 00 00 00 4C',gg.TYPE_BYTE,false,nil,nil,nil,2)
 local base = gg.getResults(1) --get base address libgame.so
 gg.clearResults()
 if base[1] ~= nil then
